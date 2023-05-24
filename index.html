@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form with the required information</p>
+        <form id="survey-form">
+            <label id="name-label">Enter Your Full Name: <input id="name" type="text" required  placeholder="Your full name"></label>
+            <label id="email-label">Enter Your Email: <input id="email" type="email" required placeholder="Your Email"></label>
+            <label id="number-label">Enter Your Phone: <input id="number" type="number" min="10" max="11" required placeholder="Your Phone"></label>
+            <label id="dropdown-label">How would you rate our survey?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Very Bad</option>
+                    <option value="2">Bad</option>
+                    <option value="3">Medium</option>
+                    <option value="4">Good</option>
+                    <option value="5">Very Good</option>
+                </select>
+            </label>
+            <label id="yes-label">Will you participate in other our surveys?<input name="yes-no" type="radio" value="yes" class="inline">Yes</label>
+            <label id="no-label"><input name="yes-no" type="radio" value="no" class="inline">No</label>
+            <label><input type="checkbox" value="love" class="inline">I love doing surveys.</label>
+            <label><input type="checkbox" value="want" class="inline">I want to take another survey.</label>
+            <label id="comments-label">Leave your comment:
+                <textarea id="comments" row="3" cols="30" placeholder="Add comment..."></textarea>
+            </label>
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
